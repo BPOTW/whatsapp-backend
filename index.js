@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors:{
-        origin:"https://whatsapp-frontend-sandy.vercel.app/",
+        origin:"*",
         method:["GET", "POST"],
         credentials:true,
     }
@@ -33,3 +33,4 @@ server.listen(5050,()=>{
     console.log('Server started successfully on port 5050');
 
 })
+
